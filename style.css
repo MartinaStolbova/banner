@@ -20,7 +20,7 @@ body{
 
 .banner__title{
     color:var(--cl-primary);
-    font-size: 3.5em;
+    font-size: 3.5rem;
     font-weight: 300;
     margin-top:20px;
     margin-bottom: 15px;
@@ -60,7 +60,6 @@ body{
     max-width:100%;
     align-self: center;
     margin:0.58rem;
-    /*padding: 0.58em;*/
 }
 
 .banner__icon2{
@@ -161,12 +160,12 @@ body{
 }
 
 .rectangle__red--from{
-    font-size: 0.47em;
+    font-size: 0.47rem;
     color: var(--cl-button);
 }
 
 .rectangle__red--month{
-    font-size: 0.58em;
+    font-size: 0.58rem;
     text-transform: uppercase;
     position: relative;
     top:-15px;
@@ -180,11 +179,11 @@ body{
 
 .rectangle__red--nej{
     display: relative;
-    top: 0.58em;
+    top: 0.58rem;
     color:var(--cl-button);
-    line-height: 1em;
-    font-size:0.82em;
-    line-height:1em;
+    line-height: 1rem;
+    font-size:0.82rem;
+    line-height:1rem;
     text-align: right;
     display: none;
 }
@@ -204,24 +203,25 @@ body{
 .banner__1--left{
     display: flex;
 }
+
 .banner--right{
     order: 2;
 }
+
 .banner__list{
     flex-wrap: nowrap;
 }
+
 .banner__list2{
     flex-wrap: wrap;
 }
+
 .banner__list2--half{
     display: flex;
 }
+
 .banner__item--2{
     flex: 0 1 50%;
-}
-
-.rectangles{
-    flex:0 0;
 }
 
 rectangle__red--nej{
@@ -236,57 +236,68 @@ rectangle__red--nej{
         display:block;
         position:relative;
 }
+
 .banner__right2{
     margin-left: 100px;
 }
+
 .rectangle__grey,
 .rectangle__grey2{
     display:block;
     overflow: hidden;          
-    font-size: 0.58em;
+    font-size: 0.58rem;
     line-height: 1.11rem;
-    padding: 1em;
+    padding: 1rem;
     position: relative;
     top:12px;
 }
+
 .rectangle__grey{
-    left:-20px;
+    left:-2.17rem;
 }
+
 .rectangle__grey2{
-    left: 30px;
+    left: 2.5rem;
 }
+
 .banner__photo--hidden{
     position:relative;
     bottom: 420px;
-    left:250px;
+    left:14.70rem;
 }
+
 .banner__photo--hidden2{
  position:relative;
  bottom: 420px;
- right:215px;
+ right:12.64rem;
 }
 
 .rectangle__red{
-    margin-right:180px;
-    margin:left -30px;
+    margin-right:10.58rem;
+    margin:left 1.76rem;
     position:relative;
-    right:50px;
+    right:2.94rem;
 }
+
 .rectangle__red2{
-    margin: left 150px;
+    margin: left 8.82rem;
 }
+
 .banner__icon,
 .banner__icon2{
-    margin:10px;
+    margin:0.58rem;
 }
+
 .banner__text,
 .banner__text2{
     font-size: 0.8rem;
     text-align:left;
 }
+
 .rectangle__red--nej{
     display: block;
 }
+
 .rectangles2{
     z-index: 2;
     position:relative;
@@ -297,9 +308,11 @@ rectangle__red--nej{
     position: relative;
     top:7.05rem;
 }
+
 .rectangle__red--button{
     margin-top:1.17rem;
 }
+
 .rectangle__red--left{
     padding:1.17rem;
 }
