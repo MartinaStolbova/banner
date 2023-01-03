@@ -1,7 +1,7 @@
 :root {
     --cl-primary: #c4003c;
     --cl-button-darken:#9E030C;
-    --cl-rectangle-grey:#D0D0D0;
+    --cl-rectangle-grey:rgba(208, 208, 208, 0.37);
     --cl-button:#FFFFFF;
     --cl-text-border:#000000;
     
@@ -42,13 +42,13 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 auto;
-    padding-left:0;
     list-style: none;
 }
 
 .banner__item, .banner__item--2{
     display: flex;
-    flex-basis: 100%;
+    flex-basis: 1 1 100%;
+
 }
 
 .banner__item--2{
@@ -59,6 +59,7 @@ body{
 .banner__icon2{
     max-width:100%;
     align-self: center;
+    margin:0.58rem;
     /*padding: 0.58em;*/
 }
 
@@ -90,7 +91,7 @@ body{
 .rectangle__grey2{
     text-transform: uppercase;
     color:var(--cl-text-border);
-    font-size: 0.58em;
+    font-size: 0.30em;
     line-height: 1.11em;
     margin:0;
     background-color: var(--cl-rectangle-grey);
@@ -98,7 +99,6 @@ body{
     text-align: right;
     overflow: hidden;
     box-shadow:0 0 25% rgba(0, 0, 0, 0.1608);
-    opacity: 37.9%;
     z-index:-2;
     display:none;
 }
@@ -153,9 +153,9 @@ body{
 
 .rectangle__red--price,
 .rectangle__red--price2{
-    font-size: 1.47em;
+    font-size: 2rem;
     color:var(--cl-button);
-    font-weight: 400;
+    font-weight: bolder;
     text-shadow: 16%;
     text-decoration-line:rgba(0, 0, 0, 1);
 }
@@ -195,11 +195,10 @@ body{
     justify-content: center;
 }
 
-/********************600px**********************/
-@media screen and (min-width: 600px){
+/********************800px**********************/
+@media screen and (min-width: 800px){
 .banner{
     display: flex;
-
 }
 
 .banner__1--left{
@@ -220,9 +219,7 @@ body{
 .banner__item--2{
     flex: 0 1 50%;
 }
-.banner__icon{
-    flex:none;
-}
+
 .rectangles{
     flex:0 0;
 }
@@ -230,147 +227,8 @@ body{
 rectangle__red--nej{
     display:block;
 }
-/*
-.banner__list{
-        flex-wrap: nowrap;
-    }
-    
-    .banner__item{
-        flex:0 0 calc(100%/3);
-    }
+}
 
-    .banner__item--2{
-        font-size: 1em;
-        flex: 0 1 50%;
-        justify-content: center;
-    }
-
-    .banner__left{
-        order:1;
-        align-self: flex-start;
-        position: relative;
-    }
-
-    .banner__photo--family{
-        padding:0;
-    }
-
-    .banner__photo--phone{
-        display: block;
-    }
-
-    p{
-        display: block;
-        margin: 0.64em;
-    }
-
-    .rectangles{
-        position:relative;
-        bottom:33.23em;
-        left:31.47em;
-    }
-
-    .rectangles2{
-        position:relative;
-        bottom:36.47em;
-        right:31.76em;
-        z-index:1;
-    }
-    
-    .rectangle__red, 
-    .rectangle__red2{
-        box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.160784);
-        max-width: 33.88em;
-        height: 7.11em;
-    }
-    .rectangle__red{
-        position:relative;
-        bottom: 4.7em;
-    }
-    .rectangle__red2{
-        position:relative;
-        bottom:4.7em;
-    }
-    
-    .rectangle__grey{
-        position:relative;
-        left:3.52px;
-    }
-
-    .rectangle__grey2{
-        position:relative;
-        left:1.52em;
-        width:31em;
-    }
-
-     rectangle__red--right{
-        flex:0 0 9.88em;
-     }
-
-    .rectangle__red--price,
-    .rectangle__red--price2{
-     font-size: 4.11em;
-     font-weight: 700;
-    }
-
-    .rectangle__red--month{
-        top:-35px;
-        font-size:0.82em;
-    }
-
-    .rectangle__red--button{
-        width:9.88em;
-        margin:1.77em;
-        margin:0;
-        border-radius:0.94em;
-    }
-
-    .rectangle__red--nej{
-        display: block;
-       line-height:1em;
-       text-align: right;
-    }
-
-    .rectangle__grey,
-    .rectangle__grey2{
-        height: 7.88em;              
-        font-size: 1em;
-        padding: 1.7em;
-        z-index:-1;
-    }
-
-    .banner__photo{
-        position:relative;
-        bottom: 18.23em;
-        left:13.05em;
-    }
-    
-        */
-/*******NEJTV********/
-
-    /*.banner__list2{
-        flex-wrap: wrap;
-    }
-
-    .banner__list2--half{
-        display: flex;
-        gap:1.76em;
-    }
-
-    .rectangle__grey2{
-        text-align: left;
-    }
-
-    .banner__1--right2{
-        text-align: right;
-    }
-
-    .banner__photo--hidden{
-        display:block;
-        position:relative;
-        /*bottom:17.05em;
-        right:10em;*/
-    }
 /**********1200px************/
 @media screen and (min-width: 1200px){   
 .banner__photo--hidden, 
@@ -385,7 +243,8 @@ rectangle__red--nej{
 .rectangle__grey2{
     display:block;
     overflow: hidden;          
-    font-size: 1em;
+    font-size: 0.58em;
+    line-height: 1.11rem;
     padding: 1em;
     position: relative;
     top:12px;
@@ -404,7 +263,7 @@ rectangle__red--nej{
 .banner__photo--hidden2{
  position:relative;
  bottom: 420px;
- right:175px;
+ right:215px;
 }
 
 .rectangle__red{
@@ -422,8 +281,8 @@ rectangle__red--nej{
 }
 .banner__text,
 .banner__text2{
-    font-size: 0.8em;
-    text-align: right;
+    font-size: 0.8rem;
+    text-align:left;
 }
 .rectangle__red--nej{
     display: block;
@@ -431,17 +290,17 @@ rectangle__red--nej{
 .rectangles2{
     z-index: 2;
     position:relative;
-    left:40px;
-    top:100px;
+    left:0.05rem;
+    top:5.88rem;
 }
 .rectangles{
     position: relative;
-    top:120px;
+    top:7.05rem;
 }
 .rectangle__red--button{
-    margin-top: 20px;
+    margin-top:1.17rem;
 }
 .rectangle__red--left{
-    padding:20px;
+    padding:1.17rem;
 }
 }
